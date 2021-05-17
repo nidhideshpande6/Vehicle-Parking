@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Page to change the cost</title>
+<style>
+body {
+	background-image: url("C:/Users/Anand Deshpande/eclipse-workspace/nidhi/pics/3.jpg");
+}
+
+input[type=number] {
+	width: 50%;
+	padding: 8px 5px;
+}
+
+input[type=submit] {
+	width: 60%;
+	background-color: #fead34;
+	padding: 10px 10px;
+	float: left;
+}
+
+.sign {
+	border: solid;
+	border-radius: 8px;
+	border-color: red;
+	background-color: rgb(190, 190, 290);
+	padding-top: 30px;
+	padding-left: 50px;
+	width: 35%;
+	height: 300px;
+	margin-left: 30%;
+	margin-top: 90px;
+}
+
+label {
+	margin-left: 40px;
+	font-size: 20px;
+}
+</style>
+</head>
+<body><div class="sign">
+		<form action="changecost.jsp" method="post">
+			<h1 style="text-align: center;">Change the Cost</h1>
+			<div class="container">
+ <label>vehicleType:</label> <select name="type" required>
+					<option value="1">Two wheelers</option>
+					<option value="2">Four wheelers</option>
+					<option value="3">Heavy load vehicle</option>
+				</select><br><br><label>Cost :</label><input type="number" name="cost"
+					required /><br><br>
+				<br> <div style="padding-left:90px;"><input type="submit" /></div>
+</body>
+</html>

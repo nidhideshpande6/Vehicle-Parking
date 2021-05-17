@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Generate the bill</title>
+<style>
+body {
+	background-image: url("C:/Users/Anand Deshpande/eclipse-workspace/nidhi/pics/3.jpg");
+}
+
+input[type=text], input[type=Password] {
+	width: 50%;
+	padding: 12px 20px;
+}
+
+input[type=submit], #button {
+	width: 60%;
+	background-color: #fead34;
+	padding: 10px 10px;
+}
+
+#log {
+	background-color: rgb(190, 190, 290);
+	padding-top: 30px;
+	padding-left: 30px;
+	width: 35%;
+	height: 350px;
+	margin-left: 30%;
+	margin-top: 90px;
+	border: solid;
+	border-radius: 8px;
+	border-color: red;
+}
+
+label {
+	margin-left: 40px;
+	font-size: 20px;
+}
+</style>
+</head>
+<bod>
+<div id="log" class="container">
+	<form action="billgenerate.jsp" method="post">
+		<h1 style="text-align: center;">Generate Bill</h1>
+		<br>
+		<div class="container">
+			<label>Vehicle no<input type="text" name="vehicle" required /></label><br>
+			<br>
+			<br>
+			<div style="padding-left: 120px;">
+				<input type="submit" /><br>
+				<br>
+				<div id="button">
+					<a href="Regindex.html"><center>
+							<b>Home</b>
+						</center></a>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>
