@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+<style>
+body {
+	background-image: url("C:/Users/Anand Deshpande/eclipse-workspace/nidhi/pics/3.jpg");
+}
+
+input[type=text], input[type=Password], input[type=tel] {
+	width: 50%;
+	padding: 12px 20px;
+}
+
+input[type=submit], #button {
+	width: 43%;
+	background-color: #fead34;
+	padding: 10px 10px;
+	float: left;
+}
+
+.sign {
+	border: solid;
+	border-radius: 8px;
+	border-color: red;
+	background-color: rgb(190, 190, 290);
+	padding-top: 30px;
+	padding-left: 50px;
+	width: 35%;
+	height: 530px;
+	margin-left: 30%;
+	margin-top: 30px;
+}
+
+label {
+	margin-left: 40px;
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+	<div class="sign">
+		<form action="sign.jsp" method="post">
+			<h2 style="text-align: center;">SIGNUP Form</h2>
+			<div class="container">
+				<label>Owner id</label><input type="text" name="oid" required /><br>
+				<br> <label>password</label><input type="password" name="pwd"
+					required /><br>
+				<br> <label> Name :</label><input type="text" name="name"
+					required /><br>
+				<br> <label>PhoneNo:</label><input type="text" name="phone"
+					required /><br>
+				<br> <label>email id</label><input type="text" name="email"
+					required /><br>
+				<br> <label> VehicleNo :</label><input type="text"
+					name="vehicleno" required /><br>
+				<br> <label>vehicleType:</label> <select name="type" required>
+					<option value="1">Two wheelers</option>
+					<option value="2">Four wheelers</option>
+					<option value="3">Heavy load vehicle</option>
+				</select><br>
+				<br> <input type="submit" />
+				<div id="button">
+					<a href="login.html"><center>
+							<b>Log In</b>
+						</center></a>
+				</div>
+			</div>
+	</div>
+	</form>
+</body>
+</html>

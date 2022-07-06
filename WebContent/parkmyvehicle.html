@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Park my Vehicle</title>
+<style>
+body {
+	background-image: url("C:/Users/Anand Deshpande/eclipse-workspace/nidhi/pics/3.jpg");
+}
+
+input[type=text], input[type=Password] {
+	width: 40%;
+	padding-top:10px;
+}
+
+input[type=submit], #button {
+	width: 60%;
+	background-color: #fead34;
+	padding: 10px 10px;
+}
+
+#log {
+	background-color: rgb(190, 190, 290);
+	padding-top: 30px;
+	padding-left: 30px;
+	width: 35%;
+	height: 390px;
+	margin-left: 30%;
+	margin-top: 90px;
+	border: solid;
+	border-radius: 8px;
+	border-color: red;
+}
+
+label {
+	margin-left: 40px;
+	font-size: 20px;
+}
+</style>
+</head>
+<bod>
+<div id="log" class="container">
+	<form action="parkmyvehicle.jsp" method="post">
+		<h1 style="text-align: center;">Park my Vehicle</h1>
+		<div class="container">
+			<label>vehicleType:</label> <select name="type" required>
+					<option value="1">Two wheelers</option>
+					<option value="2">Four wheelers</option>
+					<option value="3">Heavy load vehicle</option>
+				</select><br>
+			<br>
+			<label>Select Slot:</label> <select name="slot" required>
+					<option value="1">Slot No :A</option>
+					<option value="2">Slot No :B</option>
+					<option value="3">Slot No :C</option>
+					<option value="4">Slot No :D</option>
+					<option value="5">Slot No :E</option>
+				</select><br>
+			<br>
+			<br> <label>Vehicle No<input type="text"
+				name="vehicle" required /><br>
+			<br>
+			<br></label>
+			<div style="padding-left: 120px">
+				<input type="submit" /><br>
+				<br>
+				<div id="button">
+					<a href="Regindex.html"><center>
+							<b>Home</b>
+						</center></a>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>
